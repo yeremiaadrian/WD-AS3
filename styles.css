@@ -1,19 +1,14 @@
-/* ==========BASIC STYLING & CLEAN UP============= */
-
 html {
   scroll-behavior: smooth;
-  /* to make scroll smooth or when user click on interaction(not jump directly) */
 }
 
 @font-face {
   font-family: 'bold';
-  /* setting text to @font-face "bold" */
   src: url("../font/LibreBaskerville-Bold.ttf");
 }
 
 @font-face {
   font-family: 'regular';
-  /* setting text to @font-face "regular" */
   src: url("/font/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
@@ -21,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* to keep any border and padding in the specific value of the element's height and width */
   font-family: regular;
   font-size: 2.5vw;
   background-color: #000000;
@@ -55,7 +49,6 @@ body {
 section {
   height: 100vh;
   scroll-margin: 140px;
-  /* to specify the distance between the container and snap position */
 }
 
 section:nth-child(even) {
@@ -95,28 +88,21 @@ nav {
   font-family: 'regular';
   text-align: center;
   display: flex;
-  /* Add Flexbox */
   align-items: center;
-  /* Vertically center align items */
   justify-content: left;
   z-index: 100;
-  /* to control the stacking order */
   padding-left: 50px;
 }
 
 a {
   text-decoration: none;
-  /* to remove any decoration and line */
   color: rgb(255, 255, 255);
   margin: 0 20px;
-  /* Adjust margin for spacing */
 }
 
 #nav-logo {
   border: none;
-  /* to remove border stroke */
   background-color: transparent;
-  /* to make the background transparent */
   padding-right: 200px;
   margin: 0;
 }
@@ -164,9 +150,7 @@ nav a:hover {
 
 .content-wrapper {
   display: flex;
-  /* Use Flexbox */
   align-items: left;
-  /* Vertically center align items */
   justify-content: left;
   padding-top: 300px;
 }
@@ -208,11 +192,8 @@ p {
   height: 60vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg\ pub.jpg');
   background-size: cover;
-  /* Scale the background image to cover the entire element */
   background-position: center;
-  /* Center the image in the element */
   background-repeat: no-repeat;
-  /* Prevent the image from repeating */
 
 }
 
@@ -227,9 +208,7 @@ p {
 
 .product-text {
   display: flex;
-  /* Use Flexbox */
   align-items: center;
-  /* Vertically center align items */
   justify-content: center;
   padding-left: 50px;
   padding-right: 50px;
@@ -368,11 +347,8 @@ footer p,
 .grid {
   display: grid;
   grid-template-columns: repeat(9, 2fr);
-  /* 2 columns for the first row */
   grid-template-rows: 350px;
-  /* Automatic height */
   gap: 15px;
-  /* Space between grid items */
 
 
 }
@@ -380,7 +356,6 @@ footer p,
 .item1 {
   grid-row: 1;
   grid-column: span 6;
-  /* Item 1 spans across both columns */
   background-image: url(/images/sin_gin_range_1200x.progressive.webp);
   background-size: cover;
   background-position: center;
@@ -405,9 +380,7 @@ footer p,
 .item3,
 .item4 {
   grid-row: 2;
-  /* Items 5, 6, 7 in the third row */
   grid-column: span 2;
-  /* Each item takes up 1 column */
 }
 
 
@@ -434,9 +407,7 @@ footer p,
 
 .grid-item {
   background-color: #000000;
-  /* Background color for grid items */
   color: #fff;
-  /* Text color */
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -445,46 +416,35 @@ footer p,
 
 .grid-item img {
   width: 100%;
-  /* Make images responsive */
   height: auto;
-  /* Maintain aspect ratio */
 }
 
-/* Adding colors to specific grid items */
 .item1 {
   border: 2px solid #e74c3c;
 }
 
-/* Example for item 1 */
 .item2 {
   border: 2px solid #9b59b6;
 }
 
-/* Example for item 2 */
 .item3 {
   border: 2px solid #2980b9;
 }
 
-/* Example for item 3 */
 .item4 {
   border: 2px solid #f1c40f;
 }
 
-/* Example for item 4 */
 .item5 {
   border: 2px solid #27ae60;
 }
 
-/* Example for item 5 */
 
 
 iframe {
   width: 100%;
-  /* Full width of the grid item */
   height: 100%;
-  /* Full height of the grid item */
   border: none;
-  /* Remove default border */
 }
 
 .story {
@@ -493,18 +453,14 @@ iframe {
   background-position: top center;
   background-repeat: no-repeat;
   border: 2px solid #f39c12;
-  /* Border around story */
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
-  /* Space above story */
   text-align: center;
-  /* Centered text */
 }
 
 .story h2 {
   margin-bottom: 10px;
-  /* Space below heading */
   font-family: 'bold';
 }
 
