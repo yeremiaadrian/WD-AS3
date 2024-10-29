@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (noButton) {
     noButton.addEventListener('click', () => {
-      if (overlay) overlay.style.display = 'none';
+        location.reload(); 
     });
-  }
+}
 
   const bgMusic = new Audio('audio/jazz.mp3')
 
